@@ -54,3 +54,22 @@ Fetch your data:
 DB[:reports].all
 # => [{:id=>1, :data=>{"foo"=>"bar"}}]
 ```
+
+## K.  What about models?
+
+Sure!
+
+```ruby
+require 'sequel'
+require 'sequel/extensions/pg_hstore'
+
+DB = Sequel.connect('postgres://localhost/gorsuch')
+DB.extend Sequel::Postgres::HStore::DatabaseMethods
+
+class Report < Sequel::Model
+end
+
+Report.create data: { foo: 'bar' }
+#=> #<Report @values={:id=>1, :data=>{"foo"=>"bar"}}>
+
+```
