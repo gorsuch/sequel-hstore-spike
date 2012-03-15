@@ -1,0 +1,17 @@
+GIT
+  remote: git://github.com/jeremyevans/sequel.git
+  revision: b82dad30c3ec052697b4885c19b934711101eafa
+  specs:
+    sequel (3.33.0)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    pg (0.13.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  pg
+  sequel!
