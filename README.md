@@ -63,7 +63,7 @@ Sure!
 require 'sequel'
 require 'sequel/extensions/pg_hstore'
 
-DB = Sequel.connect('postgres://localhost/mydb')
+DB = Sequel.connect 'postgres://localhost/mydb'
 DB.extend Sequel::Postgres::HStore::DatabaseMethods
 
 class Report < Sequel::Model
