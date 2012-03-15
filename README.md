@@ -39,7 +39,7 @@ bundle exec irb -r sequel -r sequel/extensions/pg_hstore
 Connect to a database:
 
 ```ruby
-DB = Sequel.connect('postgres://localhost/mydb')
+DB = Sequel.connect 'postgres://localhost/mydb'
 ```
 
 Insert some hstore data:
