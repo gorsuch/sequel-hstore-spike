@@ -21,7 +21,7 @@ CREATE EXTENSION hstore;
 Create a table:
 
 ```sql
-CREATE TABLE reports (id serial PRIMARY KEY, token varchar, data hstore);
+CREATE TABLE reports (id serial PRIMARY KEY, data hstore);
 ```
 
 Bundle:
