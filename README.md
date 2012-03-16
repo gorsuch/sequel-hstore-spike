@@ -52,4 +52,5 @@ Fetch your data:
 
 ```ruby
 DB[:reports].all
+# => [{:id=>1, :token=>nil, :data=>{"foo"=>"bar"}}]
 ```
