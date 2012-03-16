@@ -1,4 +1,14 @@
-Lets do some hstore.
+# Lets do some hstore.
+
+## Why?
+
+We all get it.  Sometimes the relational thing is a drag.  You want to use documents at times.
+
+But maybe jumping to Mongo or Couch isn't necessarily the best choice in your situation.
+
+What if you could use your battle-tested postgres box for this?
+
+## Oh. Oh!  How do we do it?
 
 First, we assume you are running postgres 9.1.3 (because that is what I'm using).
 
